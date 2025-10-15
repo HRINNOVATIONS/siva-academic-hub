@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import ownerPortrait from "@/assets/owner-portrait.jpg";
 import promoBanner from "@/assets/promo-banner.jpg";
+import logo from "@/assets/logo.jpg";
 
 const Index = () => {
   const [visitorCount, setVisitorCount] = useState(0);
@@ -38,8 +39,7 @@ const Index = () => {
       <header className="sticky top-[46px] z-40 backdrop-blur-md bg-background/80 border-b border-border shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <GraduationCap className="h-8 w-8 text-primary" />
-            <h1 className="text-xl md:text-2xl font-bold text-primary">SIVA TUITIONS</h1>
+            <img src={logo} alt="Siva Tuitions Logo" className="h-12 md:h-16 w-auto" />
           </div>
           <div className="flex items-center gap-2 md:gap-4">
             <Button variant="whatsapp" size="sm" onClick={handleWhatsApp} aria-label="Contact via WhatsApp">
@@ -236,7 +236,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="aspect-video rounded-2xl overflow-hidden shadow-xl mb-6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3160399725!2d78.24323059453124!3d17.412608600658098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.9427979773177!2d80.41178927427832!3d16.325866784391504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a7564ff317641%3A0x6ec8b552762c8f82!2sSIVA%20TUITIONS%20%26%20COACHINGS%20%2C%20SVN%20COLONY%2C%20GUNTUR-6!5e0!3m2!1sen!2sin!4v1760549371642!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
